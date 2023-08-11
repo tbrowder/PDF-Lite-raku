@@ -30,7 +30,7 @@ jobs:
       - if: matrix.os == 'macOS-latest'
         run: brew install openssl
       - if: matrix.os == 'windows-latest'
-        run: choco install openssl
+        run: choco install make openssl
       - name: Install Dependencies
         run: |
           zef install --/test App::Prove6
