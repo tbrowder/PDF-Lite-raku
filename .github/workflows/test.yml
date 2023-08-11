@@ -20,8 +20,7 @@ jobs:
           - 'latest'
           - '2022.07'
         exclude:
-          - os: windows-latest
-            raku-version: 'latest'
+          - raku-version: 'latest'
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2
@@ -30,6 +29,8 @@ jobs:
           raku-version: ${{ matrix.raku-version }}
       - if: matrix.os == 'macOS-latest'
         run: brew install openssl
+      - if: matrix.os == 'windows-latest'
+        run: choco install openssl
       - name: Install Dependencies
         run: |
           zef install --/test App::Prove6
