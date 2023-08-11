@@ -1,7 +1,7 @@
 [[Raku PDF Project]](https://pdf-raku.github.io)
  / [PDF::Lite](https://pdf-raku.github.io/PDF-Lite-raku)
 
-[![Actions Status](https://github.com/pdf-raku/PDF-Lite-raku/workflows/test/badge.svg)](https://github.com/pdf-raku/PDF-Lite-raku/actions)
+[![Actions Status](https://github.com/pdf-raku/PDF-Lite-raku/workflows/windows/badge.svg)](https://github.com/pdf-raku/PDF-Lite-raku/actions)
 
 # PDF::Lite
 
